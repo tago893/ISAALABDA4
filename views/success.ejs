@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Registeration Form</title>
+    <style>
+      div {
+        text-align: center;
+        border: 1px solid black;
+        margin-top: 6%;
+        margin-left: 31em;
+        margin-right: 31em;
+        padding-top: 2%;
+        padding-bottom: 5%;
+      }
+
+      input {
+        padding: 10px;
+        border: none;
+        border-bottom: 2px solid grey;
+      }
+
+      button {
+        padding: 10px;
+        border: none;
+        border-bottom: 2px solid grey;
+        padding-left: 10px;
+        padding-right: 10px;
+        background-color: crimson;
+        color: white;
+        border-radius: 5px;
+      }
+
+      a:link,
+      a:visited {
+        background-color: crimson;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+      }
+
+      a:hover,
+      a:active {
+        background-color: crimson;
+      }
+
+      .immu {
+        border-style: none;
+      }
+
+      input:focus,
+      textarea:focus,
+      select:focus {
+        outline: none;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div>
+      <h1><%=msg%></h1>
+      <form method="get" action="/">
+        <button class="btn" type="submit">Back to home page</button>
+      </form>
+    </div>
+  </body>
+</html>
