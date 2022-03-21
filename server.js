@@ -62,7 +62,7 @@ app.post('/delete', async (req, res) => {
 
     User.findOne({ regno: regno }, async (err, user) => {
         
-        if(user != null){
+        if(user !== null){
             //decrypting password obtained from db
             var bytes  = CryptoJS.AES.decrypt(user.password, 'secret key 123');
             user.password = bytes.toString(CryptoJS.enc.Utf8);
@@ -103,7 +103,7 @@ app.post('/modify', async (req, res) => {
 
     User.findOne({ regno: currentRegno }, async (err, user) => {
         
-        if(user != null){
+        if(user !== null){
             //decrypting password obtained from db
             var bytes  = CryptoJS.AES.decrypt(user.password, 'secret key 123');
             user.password = bytes.toString(CryptoJS.enc.Utf8);
